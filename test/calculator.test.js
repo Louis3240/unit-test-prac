@@ -11,3 +11,17 @@ describe('calculator add', function () {
         expect(sum).toBe(3);
     });
 });
+
+class StringCombine {
+    combine(a,b){
+        return a+b
+    }
+}
+
+describe('string add', function () {
+    it('string combine', function () {
+        let stringCombine = new StringCombine();
+        let combine = stringCombine.combine("1","2");
+        expect(combine).toBe("12");
+    });
+});
